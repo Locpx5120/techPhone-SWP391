@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/tech/src/java/dal/UserDAO.java</file>
+            <file>file:/D:/tech/src/java/controllers/LoginController.java</file>
+            <file>file:/D:/tech/src/java/ulti/GooglePojo.java</file>
+            <file>file:/D:/tech/src/java/ulti/Constant.java</file>
+            <file>file:/D:/tech/src/java/controllers/LoginGoogle.java</file>
+            <file>file:/D:/tech/web/profile.jsp</file>
+            <file>file:/D:/tech/web/WEB-INF/web.xml</file>
+            <file>file:/D:/tech/src/java/controllers/SignupControler.java</file>
+            <file>file:/D:/tech/src/java/ulti/GoogleUtils.java</file>
+            <file>file:/D:/tech/src/java/context/DBContext.java</file>
+            <file>file:/D:/tech/src/java/models/Order.java</file>
+            <file>file:/D:/tech/web/signup.jsp</file>
+            <file>file:/D:/tech/web/login.jsp</file>
+            <file>file:/D:/tech/web/checkout.html</file>
+            <file>file:/D:/tech/web/component/header.jsp</file>
+            <file>file:/D:/tech/src/java/controllers/LogoutController.java</file>
+            <file>file:/D:/tech/src/java/models/RoleConstant.java</file>
+            <file>file:/D:/tech/src/java/models/User.java</file>
+            <file>file:/D:/tech/web/product.html</file>
+        </group>
+    </open-files>
+</project-private>
