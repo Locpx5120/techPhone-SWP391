@@ -1,46 +1,34 @@
 package models;
 
+import java.util.Date;
 
 public class User {
-
     private int userId;
-    private String password;
     private String fullName;
-    private String avatar;
-    private String phone;
     private String email;
+    private String password;
     private String address;
-    private int roleID; 
-    private int active; 
-   
+    private String phone;
+    private String avatar;
+    private int roleId;
+    private boolean active;
+    private Date createdDate;
 
-    public User() {
-    }
-    
-    
+    // Constructors
+    public User() {}
 
-    public User(String username, String password, String fullName,
-              String avatar, String phone, 
-            String email, String address, int roleID, int active) {
+    public User(int userId, String fullName, String email, String password, String address, String phone, String avatar, int roleId, boolean active, Date createdDate) {
+        this.userId = userId;
+        this.fullName = fullName;
+        this.email = email;
         this.password = password;
-        this.fullName = fullName;
+        this.address = address;
+        this.phone = phone;
         this.avatar = avatar;
-        this.phone = phone;
-        this.email = email;
-        this.address = address;
-       this.roleID = roleID;
+        this.roleId = roleId;
         this.active = active;
+        this.createdDate = createdDate;
     }
-
-    public User(String fullName, String email, String phone, String address, String password) {
-         this.password = password;
-        this.fullName = fullName;
-        this.phone = phone;
-        this.email = email;
-        this.address = address;
-    }
-
-    
 
     // Getters and Setters
     public int getUserId() {
@@ -51,38 +39,12 @@ public class User {
         this.userId = userId;
     }
 
-   
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
     public String getFullName() {
         return fullName;
     }
 
     public void setFullName(String fullName) {
         this.fullName = fullName;
-    }
-
-    public String getAvatar() {
-        return avatar;
-    }
-
-    public void setAvatar(String avatar) {
-        this.avatar = avatar;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
     }
 
     public String getEmail() {
@@ -93,6 +55,14 @@ public class User {
         this.email = email;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public String getAddress() {
         return address;
     }
@@ -101,23 +71,51 @@ public class User {
         this.address = address;
     }
 
-
-    public int getRole() {
-        return roleID;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setRole(int roleID) {
-        this.roleID = roleID;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    public int isActive() {
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
+    public int getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(int roleId) {
+        this.roleId = roleId;
+    }
+
+    public boolean isActive() {
         return active;
     }
 
-    public void setActive(int active) {
+    public void setActive(boolean active) {
         this.active = active;
     }
 
+    public Date getCreatedDate() {
+        return createdDate;
+    }
+
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
+    }
     
+    //ToString
+
+    @Override
+    public String toString() {
+        return "User{" + "userId=" + userId + ", fullName=" + fullName + ", email=" + email + ", password=" + password + ", address=" + address + ", phone=" + phone + ", avatar=" + avatar + ", roleId=" + roleId + ", active=" + active + ", createdDate=" + createdDate + '}';
+    }
     
 }

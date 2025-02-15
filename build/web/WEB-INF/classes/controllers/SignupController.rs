@@ -1,3 +1,0 @@
-controller.SignupController
-controller.SignUpController
-controller.SignupServlet
