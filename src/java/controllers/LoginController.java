@@ -16,7 +16,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import java.util.List;
 
-import models.RoleConstant;
+import models.Role;
 import models.User;
 
 /**

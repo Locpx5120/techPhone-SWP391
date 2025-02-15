@@ -18,8 +18,8 @@ public class DBContext {
     public Connection openConnection() throws SQLException, ClassNotFoundException {
         try {
             String user = "sa";
-            String pass = "123";
-            String url = "jdbc:sqlserver://localhost\\SQLEXPRESS:1433;databaseName=techphonee";
+            String pass = "123456";
+            String url = "jdbc:sqlserver://localhost\\SQLEXPRESS:1433;databaseName=techphones";
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             connection = DriverManager.getConnection(url, user, pass);
         } catch (ClassNotFoundException | SQLException ex) {

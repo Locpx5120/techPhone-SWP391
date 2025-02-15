@@ -1,121 +1,71 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package models;
 
 import java.util.Date;
 
-/**
- *
- * @author ThinkPro
- */
 public class Order {
-    private int id;
-    private int customer_id;
-    private String status, customer_name;
-    private Date order_datetime;
-    private int total_cost;
-    private User customer;
-    private String email, phone, address,note;
+    private int orderId;
+    private int customerId;
+    private String orderStatus;
+    private double totalAmount;
+    private Date orderDate;
 
-    public String getEmail() {
-        return email;
+    // Constructors
+    public Order() {}
+
+    public Order(int orderId, int customerId, String orderStatus, double totalAmount, Date orderDate) {
+        this.orderId = orderId;
+        this.customerId = customerId;
+        this.orderStatus = orderStatus;
+        this.totalAmount = totalAmount;
+        this.orderDate = orderDate;
     }
 
-    public String getCustomer_name() {
-        return customer_name;
+    // Getters and Setters
+    public int getOrderId() {
+        return orderId;
     }
 
-    public void setCustomer_name(String customer_name) {
-        this.customer_name = customer_name;
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public int getCustomerId() {
+        return customerId;
     }
 
-    public String getPhone() {
-        return phone;
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public String getOrderStatus() {
+        return orderStatus;
     }
 
-    public String getAddress() {
-        return address;
+    public void setOrderStatus(String orderStatus) {
+        this.orderStatus = orderStatus;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public double getTotalAmount() {
+        return totalAmount;
     }
 
-    public String getNote() {
-        return note;
+    public void setTotalAmount(double totalAmount) {
+        this.totalAmount = totalAmount;
     }
 
-    public void setNote(String note) {
-        this.note = note;
+    public Date getOrderDate() {
+        return orderDate;
     }
 
-   
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getCustomer_id() {
-        return customer_id;
-    }
-
-    public void setCustomer_id(int customer_id) {
-        this.customer_id = customer_id;
-    }
-
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public Date getOrder_datetime() {
-        return order_datetime;
-    }
-
-    public void setOrder_datetime(Date order_datetime) {
-        this.order_datetime = order_datetime;
-    }
-
-   
-
-    public int getTotal_cost() {
-        return total_cost;
-    }
-
-    public void setTotal_cost(int total_cost) {
-        this.total_cost = total_cost;
-    }
-
-    public User getCustomer() {
-        return customer;
-    }
-
-    public void setCustomer(User customer) {
-        this.customer = customer;
+    public void setOrderDate(Date orderDate) {
+        this.orderDate = orderDate;
     }
     
-    
+    //ToString
 
-    public Order() {
+    @Override
+    public String toString() {
+        return "Order{" + "orderId=" + orderId + ", customerId=" + customerId + ", orderStatus=" + orderStatus + ", totalAmount=" + totalAmount + ", orderDate=" + orderDate + '}';
     }
-
-   
     
 }
